@@ -1,0 +1,25 @@
+server:
+  port: 8030
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: xcx-cart
+  cloud:
+    nacos:
+      discovery:
+        server-addr:
+        username: nacos
+        password: nacos
+    loadbalancer:
+      cache:
+        enabled: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml

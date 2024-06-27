@@ -1,0 +1,44 @@
+server:
+  port: 8050
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: xcx-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr:
+        username: nacos
+        password: nacos
+    loadbalancer:
+      cache:
+        enabled: false
+    gateway:
+     routes:
+       - id: user
+         uri: lb://xcx-user
+         predicates:
+          - Path=/user/**
+
+       - id: good
+         uri: lb://xcx-good
+         predicates:
+           - Path=/goods/**
+
+       - id: cart
+         uri: lb://xcx-cart
+         predicates:
+           - Path=/cart/**
+
+       - id: client
+         uri: lb://xcx-client
+         predicates:
+           - Path=/client/**
+
+       - id: order
+         uri: lb://xcx-order
+         predicates:
+           - Path=/order/**
+

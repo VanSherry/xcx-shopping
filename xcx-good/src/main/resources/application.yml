@@ -1,0 +1,30 @@
+server:
+  port: 8033
+  tomcat:
+    uri-encoding: UTF-8
+
+file-save-path: D:/javaProgram/xcx/images/
+
+spring:
+  application:
+    name: xcx-good
+  cloud:
+    nacos:
+      discovery:
+        server-addr:
+        username: nacos
+        password: nacos
+    loadbalancer:
+      cache:
+        enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username: root
+    password: root
+
+minio:
+  endPoint:
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucket: xcx-image

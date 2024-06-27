@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: xcx-cart
+  cloud:
+    nacos:
+      server-addr:
+      username: nacos
+      password: nacos
+      config:
+        file-extension: yaml
+        shared-configs:
+          - dataId: shared-jdbc.yaml
+          - dataId: shared-swagger.yml
