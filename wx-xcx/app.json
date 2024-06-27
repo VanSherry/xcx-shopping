@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/firstpage/firstpage",
+    "pages/sortage/sortage",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "雪梨买菜",
+    "navigationBarBackgroundColor": "#2e8b57",
+    "onReachBottomDistance":50,
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/firstpage/firstpage",
+      "text": "首页",
+      "iconPath": "/pages/image/tabbar/fp.png",
+      "selectedIconPath": "/pages/image/tabbar/fpa.png"
+    },
+    {"pagePath": "pages/sortage/sortage",
+      "text": "分类",
+      "iconPath": "/pages/image/tabbar/st.png",
+      "selectedIconPath": "/pages/image/tabbar/st.png"
+    },
+    {"pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "/pages/image/tabbar/购物车.png",
+      "selectedIconPath": "/pages/image/tabbar/购物车激活.png"
+    },
+    {"pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/pages/image/tabbar/mi.png",
+      "selectedIconPath": "/pages/image/tabbar/mi.png"
+    }
+
+
+  ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
